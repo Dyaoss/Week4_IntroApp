@@ -37,7 +37,10 @@
             android:id="@+id/et_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:ems="16"
+            android:hint="아이디를 입력해주세요."
+            android:inputType="textPersonName"/>
 
         <TextView
             android:id="@+id/tv_password"
@@ -52,7 +55,10 @@
             android:id="@+id/et_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:ems="16"
+            android:hint="비밀번호를 입력해주세요."
+            android:inputType="textPassword"/>
 
         <Button
             android:layout_width="match_parent"
