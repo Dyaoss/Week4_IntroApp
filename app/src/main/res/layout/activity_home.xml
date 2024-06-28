@@ -7,11 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="메인페이지"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="356dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/soori" />
+
+        <TextView
+            android:id="@+id/tv_home_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_home_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_home_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_home_MBTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="종료" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

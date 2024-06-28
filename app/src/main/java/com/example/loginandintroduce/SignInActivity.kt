@@ -24,19 +24,21 @@ class SignInActivity : AppCompatActivity() {
         val logIn = findViewById<Button>(R.id.btn_login)
         val sign = findViewById<Button>(R.id.btn_signup)
 
-        val extraId = findViewById<EditText>(R.id.et_id) // id editText의 입력값을 extra에 저장
-        val extraPW = findViewById<EditText>(R.id.et_password)
+        val signInidInfo = findViewById<EditText>(R.id.et_id) // id editText의 입력값을 extra에 저장
+        val signInPW = findViewById<EditText>(R.id.et_password)
 
         logIn.setOnClickListener {
 
-            var getId = extraId.text.toString()
-            var getPassWord = extraPW.text.toString()
+            var getId = signInidInfo.text.toString()
+            var getPassWord = signInPW.text.toString()
+
             if (getId.isEmpty()) {
                 Toast.makeText(applicationContext, "아이디를 입력해주세요", Toast.LENGTH_SHORT).show()
             } else if (getPassWord.isEmpty()) {
                 Toast.makeText(applicationContext, "패스워드를 입력해주세요", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("HomeActivity",getId)
                 startActivity(intent) // 로그인 버튼을 누르면 HomeActivity로 넘어감
                 Toast.makeText(applicationContext, "로그인 성공", Toast.LENGTH_SHORT).show()
             }
