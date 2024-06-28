@@ -66,7 +66,7 @@
             android:id="@+id/btn_finish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="180dp"
             android:text="종료" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

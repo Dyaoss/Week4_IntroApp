@@ -24,7 +24,7 @@ class SignInActivity : AppCompatActivity() {
         val logIn = findViewById<Button>(R.id.btn_login)
         val sign = findViewById<Button>(R.id.btn_signup)
 
-        val signInidInfo = findViewById<EditText>(R.id.et_id) // id editText의 입력값을 extra에 저장
+        val signInidInfo = findViewById<EditText>(R.id.et_id)
         val signInPW = findViewById<EditText>(R.id.et_password)
 
         logIn.setOnClickListener {
@@ -43,7 +43,6 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "로그인 성공", Toast.LENGTH_SHORT).show()
             }
         }
-
             sign.setOnClickListener {
                 val intent = Intent(this, SignUpActivity::class.java)
                 startActivity(intent)
