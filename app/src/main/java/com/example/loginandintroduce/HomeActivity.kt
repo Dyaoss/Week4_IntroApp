@@ -1,6 +1,7 @@
 package com.example.loginandintroduce
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,8 +19,13 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
-        val strData = intent.getStringExtra("HomeActivity")
+        val strData = intent.getStringExtra("idData")
         val name = findViewById<TextView>(R.id.tv_home_id)
-        name.setText(strData)
+        name.setText("아이디: ${strData}")
+
+        val closeBtn = findViewById<Button>(R.id.btn_finish)
+        closeBtn.setOnClickListener {
+            finish()
+        }
     }
 }

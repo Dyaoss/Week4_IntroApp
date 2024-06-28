@@ -26,37 +26,41 @@
             android:id="@+id/tv_home_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text=""
             android:textSize="20sp"
             android:layout_marginTop="50dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_home_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="이름: 김대현"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_home_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="나이: 32세"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_home_MBTI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="MBTI: ISFP"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/btn_finish"

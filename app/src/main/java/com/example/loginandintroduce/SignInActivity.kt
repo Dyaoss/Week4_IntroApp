@@ -38,7 +38,7 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "패스워드를 입력해주세요", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, HomeActivity::class.java)
-                intent.putExtra("HomeActivity",getId)
+                intent.putExtra("idData",getId)
                 startActivity(intent) // 로그인 버튼을 누르면 HomeActivity로 넘어감
                 Toast.makeText(applicationContext, "로그인 성공", Toast.LENGTH_SHORT).show()
             }
