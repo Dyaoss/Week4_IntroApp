@@ -26,7 +26,7 @@
             android:id="@+id/tv_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이디"
+            android:text="@string/sign_in_id"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"/>
@@ -37,14 +37,14 @@
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:ems="16"
-            android:hint="아이디를 입력해주세요."
+            android:hint="@string/sign_in_et_id"
             android:inputType="textPersonName"/>
 
         <TextView
             android:id="@+id/tv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="비밀번호"
+            android:text="@string/sign_in_password"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
@@ -55,23 +55,23 @@
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:ems="16"
-            android:hint="비밀번호를 입력해주세요."
+            android:hint="@string/sign_in_et_password"
             android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"
-            android:textSize="20dp"
+            android:text="@string/sign_in_btn_login"
+            android:textSize="20sp"
             android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입"
-            android:textSize="20dp"
+            android:text="@string/sign_in_btn_signup"
+            android:textSize="20sp"
             android:layout_marginTop="10dp"/>
 
     </LinearLayout>
