@@ -20,7 +20,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="45dp"
             app:srcCompat="@drawable/soori" />
 
         <TextView
@@ -30,7 +30,7 @@
             android:text="이름"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="20dp"/>
 
         <EditText
             android:id="@+id/et_sign_up_name"
@@ -48,7 +48,7 @@
             android:text="아이디"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
 
         <EditText
             android:id="@+id/et_sign_up_ID"
@@ -66,7 +66,7 @@
             android:text="비밀번호"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
 
         <EditText
             android:id="@+id/et_sign_up_password"
@@ -77,6 +77,24 @@
             android:hint="비밀번호를 입력해주세요."
             android:inputType="textPassword"/>
 
+        <TextView
+            android:id="@+id/tv_sign_up_password_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/et_sign_up_password_again"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:ems="16"
+            android:hint="비밀번호를 한번 더 입력해주세요."
+            android:inputType="textPassword"/>
+
         <Button
             android:id="@+id/btn_signup2"
             android:layout_width="match_parent"
@@ -84,5 +102,13 @@
             android:text="회원가입"
             android:textSize="20dp"
             android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/btn_close2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="종료"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
